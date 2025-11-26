@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="crud.controller.MainController">
+    <center>
+        <VBox spacing="10" alignment="CENTER">
+            <padding>
+                <Insets/>
+            </padding>
+
+            <TextField fx:id="txtNombre" promptText="Nombre"/>
+            <TextField fx:id="txtEdad" promptText="Edad"/>
+            <ComboBox fx:id="cmbGenero"/>
+            <HBox spacing="10">
+                <Button text="Agregar" onAction="#agregar"/>
+                <Button text="Eliminar" onAction="#eliminar"/>
+            </HBox>
+            <ListView fx:id="lstPersonas" prefHeight="200"/>
+        </VBox>
+    </center>
+</BorderPane>
